@@ -20,6 +20,14 @@ module.exports = {
     {
       method: "shell.run",
       params: {
+        message: [
+          "git clone https://github.com/5rahim/seanime app"
+        ]
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
         path: "app/seanime-web",
         message: [
           "npm i --no-audit --no-fund",
