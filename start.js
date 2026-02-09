@@ -9,10 +9,10 @@ module.exports = {
           CGO_ENABLED: "0"
         },
         message: [
-          "go run -tags=nosystray . --host 127.0.0.1 --port {{port}} --datadir \"{{path.resolve(cwd, '../data')}}\""
+          "go run -tags=nosystray . --datadir \"{{path.resolve(cwd, '../data')}}\""
         ],
         on: [{
-          event: "/(http:\\/\\/[0-9.:]+)/",
+          event: "/seanime started.+(http:\\/\\/[0-9.:]+)/i",
           done: true
         }]
       }
