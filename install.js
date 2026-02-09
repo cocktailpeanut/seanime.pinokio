@@ -22,7 +22,7 @@ module.exports = {
       params: {
         path: "app/seanime-web",
         message: [
-          "npm ci --no-audit --no-fund",
+          "npm i --no-audit --no-fund",
           "npm run build"
         ]
       }
