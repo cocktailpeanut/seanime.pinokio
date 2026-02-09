@@ -11,15 +11,6 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        path: "app",
-        message: [
-          "go mod download"
-        ]
-      }
-    },
-    {
-      method: "shell.run",
-      params: {
         message: [
           "git clone https://github.com/5rahim/seanime app"
         ]
